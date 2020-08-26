@@ -1,0 +1,22 @@
+{
+  "name": "visualization",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daochouwangu/visualization.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daochouwangu/visualization/issues"
+  },
+  "homepage": "https://github.com/daochouwangu/visualization#readme",
+  "dependencies": {
+    "d3-hierarchy": "^2.0.0"
+  }
+}

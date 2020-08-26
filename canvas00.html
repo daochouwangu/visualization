@@ -1,0 +1,27 @@
+
+<body>
+  <style>
+    canvas {
+      background-color: blue;
+    }
+    </style>
+  <canvas width="512" height="512"></canvas>
+  <script>
+    const canvas = document.querySelector("canvas");
+    const context = canvas.getContext('2d');
+    const rectSize = [100,100];
+    const canvasSize = [canvas.width,canvas.height];
+    context.save();
+    context.translate(-rectSize[0] * 0.5, -rectSize[1] * 0.5)
+    context.fillStyle = 'red';
+    context.beginPath();
+    context.rect(canvasSize[0]*0.5,canvasSize[1]*0.5,rectSize[0],rectSize[1]);
+    context.fill();
+    context.restore();
+
+    context.fillStyle = 'green';
+    context.beginPath();
+    context.rect(0,0,rectSize[0],rectSize[1]);
+    context.fill();
+    </script>
+</body>
